@@ -65,9 +65,10 @@ a.title:hover {
 .panel-primary {
     margin: 5px 0px;
     position: relative;
-    border-color: #449D44;
+    border-color: #1E23A1;
     border-radius: 0px;
     box-shadow: 1px 1px 3px;
+    margin-bottom: 25px;
 }
 
 .panel-body {
