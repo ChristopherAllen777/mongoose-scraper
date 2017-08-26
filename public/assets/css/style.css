@@ -13,21 +13,22 @@ nav, .nav-wrapper {
 
 a:hover {
     text-decoration: none !important;
-    color: #449D44;
+    color: #03a9f4;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    border-bottom: 3px solid #449D44;
+    border-bottom: 3px solid #03a9f4;
     box-shadow: 3px 3px 9px;
     padding: 3px;
 }
 
 h4, h5 {
-    border-bottom: 1.5px solid #449D44;
-    box-shadow: 2px 2px 6px #000;
+    border-bottom: 1.5px solid #03a9f4;
+    /* box-shadow: 2px 2px 6px #000; */
     padding: 3px;
     font-family: 'Slabo 27px', serif;
+    color: #3f51b5;
 }
 
 p {
@@ -36,7 +37,7 @@ p {
 }
 
 .panel-primary>.panel-heading {
-    background-color: lightgrey;
+    background-color:rgba(68, 108, 128, 0.22);
     padding: 3px !important;
     border-color: #449D44;
     border-radius: 0px;
@@ -81,8 +82,43 @@ a.title:hover {
 a.brand-logo {
     margin-left: 40px;
 }
+@media (max-width: 767px) {
+    a.brand-logo {
+        margin-left: 0px;
+    }
+}
 body {
     background-color: #446c80;
+    font-family: Roboto;
+}
+.panel.panel-primary {
+    font-family: Roboto;
+    border-radius: 5px;
+}
+a.title {
+    font-family: Roboto;
+}
+.panel-body {
+    font-family: Roboto;
+}
+p {
+    font-family: Roboto;
+}
+button.btn-sm.btn-success {
+    font-style: italic;
+}
+.progress {
+    position: relative;
+    height: 13px;
+    display: block;
+    width: 100%;
+    background-color: #acece6;
+    border-radius: 11px;
+    margin: .5rem 0 1rem 0;
+    overflow: hidden;
+}
+.jumbotron {
+    margin-top: 15px;
 }
 
 
