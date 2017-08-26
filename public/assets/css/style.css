@@ -81,5 +81,8 @@ a.title:hover {
 a.brand-logo {
     margin-left: 40px;
 }
+body {
+    background-color: #446c80;
+}
 
 
