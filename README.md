@@ -1,2 +1,1 @@
-# mongoose-scraper
-Homework 18
+# arstechnica-webscraper1.0
