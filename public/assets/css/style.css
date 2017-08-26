@@ -83,11 +83,6 @@ a.title:hover {
 a.brand-logo {
     margin-left: 40px;
 }
-@media (max-width: 767px) {
-    a.brand-logo {
-        margin-left: 0px;
-    }
-}
 body {
     background-color: #d8d8d8;
     font-family: Roboto;
@@ -120,6 +115,15 @@ button.btn-sm.btn-success {
 }
 .jumbotron {
     margin-top: 15px;
+}
+@media (max-width: 767px) {
+    a.brand-logo {
+        margin-left: 0px;
+        font-size: 12pt;
+    }
+    h1 {
+        font-size: 20px;
+    }
 }
 
 
