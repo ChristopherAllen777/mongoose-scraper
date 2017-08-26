@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Slabo+27px');
 
 nav, .nav-wrapper {
-    background-color: #616161;
+    background-color: #00BCD4;
 }
 
 #ars {
@@ -37,14 +37,14 @@ p {
 }
 
 .panel-primary>.panel-heading {
-    background-color:rgba(68, 108, 128, 0.22);
+    background-color: rgb(0, 188, 212);
     padding: 3px !important;
     border-color: #449D44;
     border-radius: 0px;
 }
 
 a.title {
-    color: #000;
+    color: #fff;
     font-family: 'Slabo 27px', serif;
     font-size: 18px;
     font-weight: 550;

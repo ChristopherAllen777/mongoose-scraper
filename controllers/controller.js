@@ -32,19 +32,19 @@ router.get("/saved", function(req, res){
 // A GET request to scrape the Ars Technica website
 router.get("/scrape", function(req, res) {
     // First, we grab the body of the html with request
-    request("https://arstechnica.com/", function(error, response, html) {
+    request("https://www.espn.com/", function(error, response, html) {
       // Then, we load that into cheerio and save it to $ for a shorthand selector
       var $ = cheerio.load(html);
       // Now, we grab every h2 within an article tag, and do the following:
-      $("header").each(function(i, element) {
+      $("article.contentItem").each(function(i, element) {
   
         // Save an empty result object
         var result = {};
   
         // Add the text and href of every link, and save them as properties of the result object
-        result.title = $(this).find("h2").text();
+        result.title = $(this).find("h1").text();
         result.link = $(this).find("a").attr("href");
-        result.about = $(this).find(".excerpt").text();
+        result.about = $(this).find("p").text();
   
         // Using our Article model, create a new entry
         // This effectively passes the result object to the entry (and the title and link)
